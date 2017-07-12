@@ -3,6 +3,8 @@ html{
     font-family: 宋体;
     color: white;
     font-weight:600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 body{
     margin: 0;
@@ -77,21 +79,23 @@ body{
     background-color: #5AC0CE;
     cursor: pointer;
 }
+
 .xm{
     width: 100%;
-    margin-top: 2rem;
-    padding-top: 6%;
-    padding-bottom: 5%;
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background-image: url("bg.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    overflow: hidden;
 }
 .xm .tx{
     width: 80px;
     height: 80px;
     background-color: white;
     margin-left: 5%;
+    margin-right: 25px;
     border-radius: 50%;
     overflow: hidden;
     float: left;
@@ -101,7 +105,7 @@ body{
 }
 .xm .txwz{
     padding-top: 20px;
-    margin-left: 130px;
+
 }
 .xm .txwz .dw{
     float: left;
@@ -118,14 +122,15 @@ body{
 }
 .zyjn{
     width: 100%;
-
     font-size: 0.5rem;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: black;
     border-bottom: groove;
     border-bottom-width: 1px;
 }
 .zyjn div{
+    margin-left: 15px;
     padding-left: 5px;
     border-left: solid;
     border-left-color: #5AC0CE;
@@ -142,8 +147,13 @@ body{
     align-items: center;
 
 }
+.jn{
+    padding-left: 0;
+}
 .jn img{
     height: 0.5rem;
+    margin-right: 5px;
+    margin-left: 15px;
 }
 .fwjg{
     color: #E46969;
